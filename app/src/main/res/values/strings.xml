@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Singing Bowl</string>
+    <string name="title_home">Home</string>
+    <string name="title_sounds">Sounds</string>
+    <string name="title_fx">FX</string>
+    <string name="title_empty">More</string>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Frequency Inputs -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FREQUENCY SETTINGS (Hz)"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Channel 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Channel 1"
+                android:textColor="@color/channel1"
+                android:textSize="14sp"/>
+            <EditText
+                android:id="@+id/editFreq1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/text_secondary"
+                android:hint="432"
+                android:textColorHint="@color/text_hint"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Hz"
+                android:textColor="@color/text_secondary"/>
+        </LinearLayout>
+
+        <!-- Channel 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Channel 2"
+                android:textColor="@color/channel2"
+                android:textSize="14sp"/>
+            <EditText
+                android:id="@+id/editFreq2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/text_secondary"
+                android:hint="528"
+                android:textColorHint="@color/text_hint"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Hz"
+                android:textColor="@color/text_secondary"/>
+        </LinearLayout>
+
+        <!-- Channel 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Channel 3"
+                android:textColor="@color/channel3"
+                android:textSize="14sp"/>
+            <EditText
+                android:id="@+id/editFreq3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/text_secondary"
+                android:hint="639"
+                android:textColorHint="@color/text_hint"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Hz"
+                android:textColor="@color/text_secondary"/>
+        </LinearLayout>
+
+        <!-- Channel 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Channel 4"
+                android:textColor="@color/channel4"
+                android:textSize="14sp"/>
+            <EditText
+                android:id="@+id/editFreq4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/text_secondary"
+                android:hint="741"
+                android:textColorHint="@color/text_hint"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Hz"
+                android:textColor="@color/text_secondary"/>
+        </LinearLayout>
+
+        <!-- Presets -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRESETS"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnPreset432"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="432 Hz"
+                android:textSize="12sp"
+                android:backgroundTint="@color/surface"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnPreset528"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="528 Hz"
+                android:textSize="12sp"
+                android:backgroundTint="@color/surface"
+                android:layout_marginHorizontal="4dp"/>
+
+            <Button
+                android:id="@+id/btnPresetCustom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Solfeggio"
+                android:textSize="12sp"
+                android:backgroundTint="@color/surface"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- BGM Loader -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACKGROUND MUSIC"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnLoadBgm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Audio File"
+            android:backgroundTint="@color/secondary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtBgmFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <!-- Frequency Reference -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FREQUENCY REFERENCE"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 396 Hz - Liberation from fear\n• 417 Hz - Facilitating change\n• 432 Hz - Universal harmony\n• 528 Hz - Transformation &amp; DNA repair\n• 639 Hz - Connecting relationships\n• 741 Hz - Awakening intuition\n• 852 Hz - Returning to spiritual order\n• 963 Hz - Divine consciousness"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:lineSpacingExtra="4dp"/>
+
+    </LinearLayout>
+</ScrollView>

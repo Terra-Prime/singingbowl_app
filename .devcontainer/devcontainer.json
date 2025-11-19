@@ -1,0 +1,26 @@
+{
+    "name": "Singing Bowl Android App",
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17",
+            "installGradle": true,
+            "gradleVersion": "8.4"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "mathiasfrohlich.Kotlin",
+                "naco-siren.gradle-language"
+            ],
+            "settings": {
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "postCreateCommand": "chmod +x gradlew && ./gradlew wrapper",
+    "remoteUser": "vscode"
+}
